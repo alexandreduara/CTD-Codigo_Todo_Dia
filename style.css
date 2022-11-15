@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Epilogue';
+    src: url(https://fonts.google.com/specimen/Epilogue);
+}
+
+body{
+    font-family: 'Epilogue',  sans-serif;
+    font-weight: 500, 700;
+    background-color: hsl(0, 0%, 98%) ;
+    border: 0;
+    margin: 0;
+}
+
+/* Css do Header */
+.cabecalho__mobile{
+    width: 95vw;
+    margin: 10px auto 5px auto ;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.menu__aberto{
+    background-color: hsl(0, 2%, 89%);
+    border-radius: 10px 20px;
+    margin-left: auto;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 100vw;
+    transition: .25s;
+}
+.menu__aberto--ativo{
+    left: 40vw;
+    transition: .25s;
+}
+
+.menu__login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+.menu__login--item{
+    margin: 10px ;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 91%);
+}
+
+
+.menu__item{
+    margin: 30px 0px 5px 0px;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    border: none;
+    padding: 5px 20px;
+    text-align: start;
+    border-radius: 20px;
+}
+.menu__recursos--ativo{
+    background-color: hsl(0, 100%, 52%);
+}
+
+.menu__item--recursos, .menu__item--companhia{
+    margin: 10px 5em;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+.menu__item--recursos-ativo{
+    display: none;
+}
+
+.menu__botao{
+    display: flex;
+    align-content: flex-end;
+}
+.attribution{
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

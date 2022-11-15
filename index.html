@@ -2,37 +2,42 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Home - Dropdown Navigation</title>
 </head>
 <body>
 
-  <header class="cabecalho">
-    <div class="cabecalho-direito">
-      <img src="" alt="" class="cabecalho__item cabecalho__item--logo">
-      <a href="" class="cabecalho__item cabecalho__item--features">Recursos</a>
-      <a href="" class="cabecalho__item cabecalho__item--features">Companhia</a>
-      <a href="" class="cabecalho__item cabecalho__item--features">Carreiras</a>
-      <a href="" class="cabecalho__item cabecalho__item--features">Sobre</a>
+  <header>
+    <div class="cabecalho__mobile">
+      <img src="/images/logo.svg" alt="logo da Snap" class="cabecalho__item cabecalho__item--logo">
+      <buttom class="menu__botao"><img src="/images/icon-menu.svg" alt="" class="cabecalho__item menu__botao"></buttom>
     </div>
-    <div class="cabecalho-esquerdo">
-     <a href="" class="cabecalho__item cabecalho__item--Entrar">Entrar</a>
-     <a href="" class="cabecalho__item cabecalho__item--Registro">Registro</a> 
+    <div class="menu__aberto menu__aberto--ativo">
+        <div class="menu__login">
+        <a href="" class="menu__login--item">Entrar</a>
+        <a href="" class="menu__login--item">Registro</a>  
+        </div>
+        <section class="menu__recursos">
+        <button href="" class="menu__item">Recursos</button>
+        
+        <a href="" class="menu__item menu__item--recursos">Check list</a>
+        <a href="" class="menu__item menu__item--recursos">Calendário</a>
+        <a href="" class="menu__item menu__item--recursos">Lembretes</a>
+        <a href="" class="menu__item menu__item--recursos">Planejamento</a>
+        </section>
+        <a href="" class="menu__item ">Companhia</a>
+        <a href="" class="menu__item menu__item--companhia">História</a>
+        <a href="" class="menu__item menu__item--companhia">Nossa Equipe</a>
+        <a href="" class="menu__item menu__item--companhia">Blog</a>
+        
+        <a href="" class="menu__item menu__item--carreiras">Carreiras</a>
+        <a href="" class="menu__item menu__item--sobre">Sobre</a>
+
+
     </div>
   </header>
-
-  Login
-  Register
-
   Make remote work
 
   Get your team in sync, no matter your location. Streamline processes, 
@@ -41,8 +46,9 @@
   Learn more
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Alexandre Duarte de Araújo</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
