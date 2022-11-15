@@ -9,7 +9,7 @@ body{
 
 /* Css do Header */
 .header__mobile{
-    width: 95vw;
+    width: 85vw;
     margin: 3vh auto 3vh auto ;
     flex-direction: row;
     display: flex;
@@ -17,6 +17,9 @@ body{
     background-color: hsl(0, 0%, 98%);
 }
 
+.menu__button{
+    width: 40px;
+}
 .menu__open{
     background-color:  hsl(0, 0%, 98%);
     border-radius: 10px 20px;
