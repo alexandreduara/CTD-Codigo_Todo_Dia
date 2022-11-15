@@ -1,16 +1,17 @@
-const botaoMenu = document.querySelector('.menu__botao')
-const menu = document.querySelector('.menu__aberto')
-const botaoMenu_recursos = document.querySelector('.menu__recursos--botao')
-const botaoMenu_companhia = document.querySelector('.menu__companhia--botao')
-const menu_recursos = document.querySelector('.menu__recursos')
-const menu_companhia = document.querySelector('.menu__companhia')
+const buttonMenu = document.querySelector('.menu__button')
+const menu = document.querySelector('.menu__open')
+const buttonMenu_resources = document.querySelector('.menu__resources--button')
+const buttonMenu_company = document.querySelector('.menu__company--button')
+const menu_resources = document.querySelector('.menu__resources')
+const arrow = document.queryCommandValue('.arrow')
+const menu_company = document.querySelector('.menu__company')
 
-botaoMenu.addEventListener('click', () => {
-    menu.classList.toggle('menu__aberto--ativo')
+buttonMenu.addEventListener('click', () => {
+    menu.classList.toggle('menu__open--active')
 })
-botaoMenu_recursos.addEventListener('click', () => {
-    menu_recursos.classList.toggle('menu__recursos--ativo')
+buttonMenu_resources.addEventListener('click', () => {
+    menu_resources.classList.toggle('menu__resources--off')
 })
-botaoMenu_companhia.addEventListener('click', () => {
-    menu_companhia.classList.toggle('menu__companhia--ativo')
+buttonMenu_company.addEventListener('click', () => {
+    menu_company.classList.toggle('menu__company--off')
 })
