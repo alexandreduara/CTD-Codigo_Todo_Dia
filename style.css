@@ -22,7 +22,7 @@ body{
 }
 
 .menu__aberto{
-    background-color: hsl(0, 2%, 89%);
+    background-color: hsl(0, 1%, 83%);
     border-radius: 10px 20px;
     margin-left: auto;
     width: 60vw;
@@ -31,8 +31,10 @@ body{
     flex-direction: column;
     position: absolute;
     left: 100vw;
+    
     transition: .25s;
 }
+
 .menu__aberto--ativo{
     left: 40vw;
     transition: .25s;
@@ -45,6 +47,7 @@ body{
 
 
 }
+
 .menu__login--item{
     margin: 10px ;
     border: 1px solid black;
@@ -59,18 +62,26 @@ body{
 
 
 .menu__item{
-    margin: 30px 0px 5px 0px;
+    margin: 10px 0px 5px 0px;
     font-size: 2em;
     font-weight: 700;
     text-decoration: none;
     color: hsl(0, 0%, 41%);
+    background-color: hsl(0, 1%, 83%);;
     border: none;
     padding: 5px 20px;
+    width: 200px;
     text-align: start;
     border-radius: 20px;
 }
+
 .menu__recursos--ativo{
-    background-color: hsl(0, 100%, 52%);
+    height: 0px;
+    overflow: hidden;
+}
+.menu__companhia--ativo{
+    height: 0px;
+    overflow: hidden;
 }
 
 .menu__item--recursos, .menu__item--companhia{
@@ -80,14 +91,13 @@ body{
     text-decoration: none;
     color: hsl(0, 0%, 41%);
 }
-.menu__item--recursos-ativo{
-    display: none;
-}
+
 
 .menu__botao{
     display: flex;
     align-content: flex-end;
 }
+
 .attribution{
     font-size: 11px; text-align: center;
 }
