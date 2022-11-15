@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,48 +10,63 @@
 <body>
 
   <header>
-    <div class="cabecalho__mobile">
-      <img src="/images/logo.svg" alt="logo da Snap" class="cabecalho__item cabecalho__item--logo">
-      <buttom class="menu__botao"><img src="/images/icon-menu.svg" alt="" class="cabecalho__item menu__botao"></buttom>
+    <div class="header__mobile">
+      <img src="/images/logo.svg" alt="Snap logo" class="header__item header__item--logo">
+      <buttom class="menu__button"><img src="/images/icon-menu.svg" alt="" class="header__item menu__button"></buttom>
     </div>
-    <div class="menu__aberto menu__aberto--ativo">
-        <div class="menu__login">
-        <a href="" class="menu__login--item">Entrar</a>
-        <a href="" class="menu__login--item">Registro</a>  
-        </div>
+    <div class="menu__open">
         
-        <button href="" class="menu__item menu__recursos--botao">Recursos</button>
-        <section class="menu__recursos">
-        <a href="" class="menu__item menu__item--recursos">Checklist</a>
-        <a href="" class="menu__item menu__item--recursos">Calendário</a>
-        <a href="" class="menu__item menu__item--recursos">Lembretes</a>
-        <a href="" class="menu__item menu__item--recursos">Planejamento</a>
+        <button href="" class="menu__item menu__resources--button">Recursos</button>
+        <img src="images/icon-arrow-down.svg" class="arrow">
+        <section class="menu__resources menu__resources--off">
+        <a href=""  class="menu__item menu__item--resources">
+          <img src="images/icon-todo.svg" class="icons todolist" alt="icon-todolist">Todo list</a>
+        <a href="" class="menu__item menu__item--resources">
+          <img src="images/icon-calendar.svg" class="icons calendar" alt="icon-calendar">Calendar</a>
+        <a href="" class="menu__item menu__item--resources">
+          <img src="images/icon-reminders.svg" class="icons reminers" alt="ícon-reminder">Reminders</a>
+        <a href="" class="menu__item menu__item--resources">
+          <img src="images/icon-planning.svg" class="icons planning" alt="ícon-planning">Planning</a>
         </section>
 
-        <button href="" class="menu__item menu__companhia--botao ">Companhia</button>
-        <section class="menu__companhia">
-        <a href="" class="menu__item menu__item--companhia">História</a>
-        <a href="" class="menu__item menu__item--companhia">Nossa Equipe</a>
-        <a href="" class="menu__item menu__item--companhia">Blog</a>
+        <button href="" class="menu__item menu__company--button ">Company</button>
+        <section class="menu__company menu__company--off">
+        <a href="" class="menu__item menu__item--company">History</a>
+        <a href="" class="menu__item menu__item--company">Owr Team</a>
+        <a href="" class="menu__item menu__item--company">Blog</a>
         </section>
 
-        <a href="" class="menu__item menu__item--carreiras">Carreiras</a>
-        <a href="" class="menu__item menu__item--sobre">Sobre</a>
+        <a href="" class="menu__item menu__item--carrers">Carrers</a>
+        <a href="" class="menu__item menu__item--about">About</a>
 
-
+        <div class="menu__login">
+          <a href="" class="menu__login--item menu__login--login">Login</a>
+          <a href="" class="menu__login--item menu__login--register">Register</a>  
+        </div>
     </div>
   </header>
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Alexandre Duarte de Araújo</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <img src="/images/image-hero-mobile.png" alt="plubicitary image hero" class="image__main image__main--mobile">
+    
+    <section class="text__main">
+      <h1 class="text__main--bold">Make remote work</h1>
+
+      <p class="text__main--default">Get your team in sync, no matter your location. 
+      Streamline processes, create team rituals, and watch productivity soar.</p>
+    </section>
+    
+    <div class="main__button">
+      <button class="main__button--learn">Learn More</button> 
+    </div>
+    
+    <div class="main__images">
+      <img class="main__image" src="/images/client-databiz.svg" alt="databiz logo">
+      <img class="main__image" src="/images/client-audiophile.svg" alt="audiophile logo">
+      <img class="main__image" src="/images/client-meet.svg" alt="meet logo">
+      <img class="main__image" src="/images/client-maker.svg" alt="maker logo">
+    </div>
+  </main>
   <script src="index.js"></script>
 </body>
 </html>
