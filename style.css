@@ -18,10 +18,12 @@ body{
 }
 
 .menu__button{
-    width: 40px;
+    width: 30px;
+    height: 25px;
     display: flex;
     align-content: flex-end;
 }
+
 .menu__open{
     background-color:  hsl(0, 0%, 98%);
     border-radius: 10px 20px;
@@ -51,7 +53,7 @@ body{
 }
 
 .menu__login--item{
-    margin: 10px ;
+    margin: 10px;
     border: 1px solid hsl(0, 0%, 41%);
     padding: 10px 20px;
     border-radius: 10px;
@@ -62,6 +64,7 @@ body{
     color: hsl(0, 0%, 41%);
     background-color: hsl(0, 0%, 98%);
 }
+
 .menu__login--item:hover{
     border: 1px solid hsl(0, 0%, 8%);
     color: hsl(0, 0%, 8%);
@@ -88,8 +91,16 @@ body{
     padding: 5px 20px;
     width: 200px;
     text-align: start;
+    display: inline-block;
     border-radius: 20px;
 }
+
+.menu__features{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .menu__item:hover{
     color: hsl(0, 0%, 8%);
 }
@@ -102,42 +113,26 @@ body{
 
 
 
-.menu__item--resources, .menu__item--company{
-    margin: 10px 10vw;
-    display: flex;
-    flex-direction: column;
-    padding: 3px;
+.menu__item--features, .menu__item--company{
+    margin: 0px 10vw;
+    padding: 1.5vh 0vh;
     font-size: 1em;
     font-weight: 700;
+    text-align:start;
     text-decoration: none;
     color: hsl(0, 0%, 41%);
 }
 
-.menu__item--resources{
-    margin: 10px 15vw;
-}
-
 .icons{
+    padding-right: 15px;
     width: 20px;
     height: 20px;
-    display: block;
-    position: absolute;
-    left: 10vw;
+    display: inline-block;
 }
 
 .arrow{
-    width: 15px;
-    left: 190vw;
-    top: 2.2vh;
-    position: absolute;
-}
-.arrow-down{
-    left: 19vw;
-    top: 2.2vh;
-}
-.arrow-up{
-    left: 19vw;
-    top: 2.2vh;
+    height: 10px;
+    padding-left: 10px;
 }
 
 .header__item--logo--desktop{
@@ -148,22 +143,26 @@ body{
     .header__mobile{
         display: none;
     }
+
     .header__item--logo--desktop{
         display: inline-block;
         margin: auto 4vw;
         align-self: center;
     }
+
     .menu__left{
         display: flex;
         align-items: flex-start;
         flex-direction: row;
         width: 60%;
     }
+
     .menu__item{
         margin: 0px;
         padding: 0px;  
         text-align: flex-start;
     }
+
     .menu__open{
         display: inline-flex;
         left: auto;
@@ -175,6 +174,7 @@ body{
         margin: auto;
         align-items: center;
     }
+
     .menu__login{
         margin-left: 25vw ;
         width: auto;
@@ -183,43 +183,46 @@ body{
 
         
     }
+
     .menu__login--item{
         text-align: center;
-        padding: 5px 20px;
+        padding: 1vh 1vw;
         margin: 0px;
         width: auto;
     }
-    .menu__company, .menu__resources{
+
+    .menu__company, .menu__features{
         margin: 10px 10vw;
         display: flex;
         flex-direction: column;
         position: absolute;
         background-color: white;
         border-radius: 10px;
-        padding: 20px 20px;
+        padding: 25px 20px;
         box-shadow: 2px 2px 4px 2px hsl(0, 0%, 41%);
-        left: 15vw;
-        top: 6vh;
+        left: 10vw;
+        top: 5vh;
     }
-    .menu__resources{
-        left: -2vw;
+
+    .menu__features{
+        left: 0vw;
+        padding: 15px 10px;
     }
-    .menu__item--resources{
+    
+    .menu__item--features{
         width: auto;
         padding: 5px 5px 10px 20px;
         margin-bottom: 0px;
     }
     .menu__item--company{
         width: auto;
+        padding: 7px 2px ;
         background-color: transparent;
-        margin-bottom: 10px ;
     }
     .icons{
         width: 20px;
         height: 20px;
-        display: block;
-        position: absolute;
-        left: 1vw;
+        display: inline-block;
     }
     
 }
@@ -284,7 +287,7 @@ body{
     overflow: hidden;
     border-radius: 0px;
 }
-.menu__resources--off{
+.menu__features--off{
     height: 0px;
     width: 0px;
     display: none;
