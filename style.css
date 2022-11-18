@@ -142,7 +142,7 @@ body{
     display: none;
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1000px){
     .header__mobile{
         display: none;
     }
@@ -297,4 +297,50 @@ body{
     display: none;
     overflow: hidden;
     border-radius: 0px;
+}
+
+@media screen and (min-width: 1000px){
+    .main{
+        display: inline-block;
+    }
+    .image__main--mobile{
+        display: none;
+    }
+    .text__main{
+        grid-area: text_main;
+        width: 50vw;
+        padding: 0px 5vw;
+        grid-column: auto;
+        display: inline-block;
+        margin: 0px;
+    }
+    .image__main--desktop{
+        width: 30vw;
+        align-content: flex-start;
+    }
+    .text__main--bold{
+        font-size:5.5vw;
+        width: 73%;
+        text-align: left;
+    }
+    .text__main--default{
+        font-size: 2vw;
+        text-align: left;
+        width: 80%;
+    }
+    .main__button{
+        width: 13vw;
+        height: 6vh;
+        margin: 0px;
+    }
+    .main__button--learn{
+        width: 100%;
+        padding: 10px 0px;
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 08%);
+        font-size: 1.1em;
+        border: 2px solid hsl(0, 0%, 08%);
+        box-shadow: 3px 3px 5px black;
+        cursor: pointer;
+        
 }
