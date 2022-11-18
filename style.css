@@ -176,6 +176,7 @@ body{
         padding: 0px;
         margin: auto;
         align-items: center;
+        overflow: visible;
     }
 
     .menu__login{
