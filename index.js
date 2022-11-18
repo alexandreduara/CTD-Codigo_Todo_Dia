@@ -43,17 +43,3 @@ buttonMenu_company.addEventListener('click',()=>{
         arrow__company.setAttribute("src","images/icon-arrow-up.svg"); 
     }
 })
-/*<script>
-        var menu = document.querySelector('nav ul');
-        var menuIcon = document.querySelector('nav .menu-icon');
-        var menuIconImg = document.querySelector('nav .menu-icon img');
-
-        menuIcon.addEventListener('click',()=>{
-            menu.classList.toggle('activo');
-            if (menuIconImg.getAttribute("src") == 'assets/images/menu-open-redm.png') {
-                menuIconImg.setAttribute("src","assets/images/menu-close-redm.png");
-            }else{
-                menuIconImg.setAttribute("src","assets/images/menu-open-redm.png"); 
-            }
-        })
-</script>*/
