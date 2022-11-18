@@ -299,6 +299,10 @@ body{
     border-radius: 0px;
 }
 
+.image__main--desktop{
+    display: none;
+}
+
 @media screen and (min-width: 1000px){
     .main{
         display: inline-block;
@@ -343,4 +347,5 @@ body{
         box-shadow: 3px 3px 5px black;
         cursor: pointer;
         
+    }
 }
