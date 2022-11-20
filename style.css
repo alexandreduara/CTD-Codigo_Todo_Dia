@@ -142,6 +142,10 @@ body{
     display: none;
 }
 
+.image__main--desktop{
+    display: none;
+}
+
 @media screen and (min-width: 1000px){
     .header__mobile{
         display: none;
@@ -299,9 +303,7 @@ body{
     border-radius: 0px;
 }
 
-.image__main--desktop{
-    display: none;
-}
+
 
 @media screen and (min-width: 1000px){
     .main{
@@ -319,6 +321,7 @@ body{
         margin: 0px;
     }
     .image__main--desktop{
+        display:relative;
         width: 30vw;
         align-content: flex-start;
     }
