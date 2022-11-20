@@ -321,7 +321,7 @@ body{
         margin: 0px;
     }
     .image__main--desktop{
-        display:relative;
+        display: inline-block;
         width: 30vw;
         align-content: flex-start;
     }
